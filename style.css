@@ -1,0 +1,172 @@
+/* Нагуглил сброс стилей */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  -moz-user-select: -moz-none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html{
+  -moz-user-select: -moz-none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+/* Сброс стилей */
+
+body{
+  font-size: 13px;
+  line-height: 1.3em;
+  color: #222;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  overflow: hidden;
+  background: url('img/bg.jpg');
+  user-select: none;
+}
+
+/*
+  Градиенты из - https://www.colorzilla.com/gradient-editor/
+*/
+.header{
+  height: 20px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, #C2C4C3),
+    color-stop(1, #999999)
+  );
+  background-image: -o-linear-gradient(bottom, #C2C4C3 0%, #999999 100%);
+  background-image: -moz-linear-gradient(bottom, #C2C4C3 0%, #999999 100%);
+  background-image: -webkit-linear-gradient(bottom, #C2C4C3 0%, #999999 100%);
+  background-image: -ms-linear-gradient(bottom, #C2C4C3 0%, #999999 100%);
+  background-image: linear-gradient(to bottom, #C2C4C3 0%, #999999 100%);
+  box-shadow: 0px 0px 7px 0px rgba(50, 50, 50, 0.8);
+  border-bottom: 1px solid #544f56;
+}
+
+
+.window{
+  border: 1px solid #544f56;
+  background: #e8e8e8;
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  top: 100px;
+  left: 100px;
+  box-shadow:0px 0px 7px 0px rgba(50, 50, 50, 0.8);
+}
+
+.top{
+  position: relative;
+  border-bottom: 1px solid #544f56;
+  cursor: move;
+  height: 20px;
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #C2C4C3),color-stop(1, #999999));
+  background-image: -o-linear-gradient(bottom, #C2C4C3 0%, #999999 100%);
+  background-image: -moz-linear-gradient(bottom, #C2C4C3 0%, #999999 100%);
+  background-image: -webkit-linear-gradient(bottom, #C2C4C3 0%, #999999 100%);
+  background-image: -ms-linear-gradient(bottom, #C2C4C3 0%, #999999 100%);
+  background-image: linear-gradient(to bottom, #C2C4C3 0%, #999999 100%);
+}
+.text{
+  color: #170c10;
+  float: right;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  width: 100%;
+}
+.close{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  float: left;
+  background: url('img/btn.png') no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.close:hover{
+  background: url('img/close.png') no-repeat;
+  background-position: center;
+}
+
+.menu{
+
+}
+.menu li.logo{
+  width: 14px;
+  margin: 1px;
+  padding: 0 40px;
+}
+.menu li.logo:hover{
+  background: transparent; 
+}
+.menu li{
+  color: #170c10;
+  float: left;
+  margin-left: 10px;
+  height: 20px;
+  padding: 0 5px;
+  line-height: 20px;
+}
+.menu li:hover{
+  color: #fff;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, #605AF8),
+    color-stop(1, #4104F8)
+  );
+  background-image: -o-linear-gradient(bottom, #605AF8 0%, #4104F8 100%);
+  background-image: -moz-linear-gradient(bottom, #605AF8 0%, #4104F8 100%);
+  background-image: -webkit-linear-gradient(bottom, #605AF8 0%, #4104F8 100%);
+  background-image: -ms-linear-gradient(bottom, #605AF8 0%, #4104F8 100%);
+  background-image: linear-gradient(to bottom, #605AF8 0%, #4104F8 100%);
+  cursor: pointer;
+}

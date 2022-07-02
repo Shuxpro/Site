@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+  <meta charset="utf-8">
+  <title>My MacOS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <ul class="menu">
+      <li class="logo"><img src="img/logo.png"/></li>
+      <li onclick="addWindow('Компьютер')">Компьютер</li>
+      <li onclick="addWindow('Мои настройки')">Мои настройки</li>
+      <li onclick="addWindow('Новое окно')">Новое окно</li>
+    </ul>
+  </div>
+
+  <div id="wrapper">
+
+    <div class="window">
+      <div class="top">
+        <div class="text">Мои настройки</div>
+        <div class="close" title="Закрыть окно"></div>
+      </div>
+      <div class="content"></div>
+    </div>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
